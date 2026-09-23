@@ -1,0 +1,45 @@
+/* ==========================================
+   Midnight Purple Theme & Grid Adjustments
+   ================================---------- */
+
+:root {
+  --bg-light: #ffffff;
+  --bg-dark: #0b061d;
+  --card-light: #ffffff;
+  --card-dark: #140d2b;
+  --text-light: #0f172a;
+  --text-dark: #f1f5f9;
+  --accent-purple: #a855f7;
+}
+
+/* Global body theme styling */
+body {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  font-family: 'Khula', sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark mode body state */
+body.dark-mode {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+/* Ensure flexbox grid containers inherit smooth spacing and full responsiveness */
+.container-fluid, .container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Utility animation class */
+.animate {
+  transition: all 0.3s ease-in-out;
+}
+
+.pointer {
+  cursor: pointer;
+}
